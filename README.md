@@ -16,4 +16,5 @@ excruciatingly slow; my script avoids using swap and performs the conversion in 
 Separate the data by chromosome, e.g., by running a `for ((i = 1; i <= 22; i++)); do ...; done` loop and performing the following steps in the loop.
    1. `python convert_shapeit2_to_impute2.py chr${i}.haps chr${i}.sample temp${i}.haps temp${i}.legend temp${i}.sample`
    2. `python convert_impute2_to_PEDMAP.py temp${i}.haps temp${i}.legend chr${i}.sample chr${i} ${i}`
-   3. `rm temp${i}.*    # comment out to keep the IMPUTE2-formatted output`
+   3. `rm temp${i}.*`
+you can comment out the third step if you would like to keep the output in IMPUTE2 format as well.
