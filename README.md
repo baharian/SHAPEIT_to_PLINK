@@ -13,5 +13,6 @@ http://www.pypedia.com/index.php/convert_shapeit_reference_to_impute2). The seco
 excruciatingly slow; my script avoids using swap and performs the conversion in memory for any number of individuals.
 
 ### Usage
-   1. `$ python convert_shapeit2_to_impute2.py chr${i}.haps chr${i}.sample temp${i}.haps temp${i}.legend temp${i}.sample`
-   2. `$ python convert_impute2_to_PEDMAP.py temp${i}.haps temp${i}.legend chr${i}.sample chr${i} ${i}`
+Separate the data by chromosome, e.g., by running a `for ((i = 1; i <= 22; i++)); do ...; done` loop and performing the following two steps in the loop:
+   1. `python convert_shapeit2_to_impute2.py chr${i}.haps chr${i}.sample temp${i}.haps temp${i}.legend temp${i}.sample`
+   2. `python convert_impute2_to_PEDMAP.py temp${i}.haps temp${i}.legend chr${i}.sample chr${i} ${i}`
