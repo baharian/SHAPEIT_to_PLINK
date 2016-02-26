@@ -1,6 +1,6 @@
 ##Convert phased genotype data from SHAPEIT2 format to PLINK format (plain text)
 
-### General Info
+### General info
 Python scripts to convert phased genotype data from SHAPEIT2 format (`.haps`/`.sample`) to plain text PLINK format (`.ped`/`.map`) while
 keeping the phasing information intact.
    1. The first step is to convert from SHAPEIT2 format (`.haps`/`.sample`) to IMPUTE2 format (`.haps`/`.legend`/`.sample`).
