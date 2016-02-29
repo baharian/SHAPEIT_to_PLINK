@@ -1,4 +1,4 @@
-##Convert phased genotype data from SHAPEIT2 format to PLINK format (plain text)
+## Convert phased genotype data from SHAPEIT2 format to PLINK format (plain text)
 
 ### General info
 Python scripts to convert phased genotype data from SHAPEIT2 format (`.haps`/`.sample`) to plain text PLINK format (`.ped`/`.map`) while
