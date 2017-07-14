@@ -17,3 +17,6 @@ Data has to be separated by chromosome; then, run a `for ((i = 1; i <= 22; i++))
    3. `rm temp${i}.*`
 
 You can comment out the third step if you would like to keep the output in IMPUTE2 format as well.
+
+### NOTE
+You might need to edit `convert_impute2_to_PEDMAP.py` to make it consistent with your phased SHAPEIT2 `.sample` file in terms of the number of columns.
